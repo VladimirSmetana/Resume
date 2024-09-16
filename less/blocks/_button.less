@@ -1,0 +1,38 @@
+.button {
+	display: inline-block;
+ 	box-shadow: 2px 1px 10px @orangelight;
+
+	font-size: 16px;
+	font-weight: 700;
+	color: #FFF;
+	// margin-top: 6px;
+	
+	padding: 11px 26px 14px;
+	background-color: @orangedark;
+	-webkit-border-radius: 60px;
+	        border-radius: 60px;
+	
+	.fa {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+}
+
+.button--download {
+	display: inline-block;
+	background-color: @orangelight;
+	color: #FFF;
+	transition:all 0.4s ease-in-out;
+	
+	&:hover, &:focus {
+		text-decoration: none;
+		background-color: @orangedark;
+		color: #FFF;
+	}
+
+	&:active {
+		text-decoration: none;
+		background-color: @orangedark;
+		color: #FFF;
+	}
+}

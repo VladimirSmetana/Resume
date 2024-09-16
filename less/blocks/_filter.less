@@ -1,0 +1,74 @@
+.filter-block {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: 19px;
+	margin-bottom: 20px;
+	
+	@media (min-width: 768px) {
+		padding-top: 8px;
+		margin-bottom: 50px;
+	}
+}
+
+.filter-block__block {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.filter-block__element {
+	margin: 0 0 9;
+	padding: 0;
+	display: block;
+	margin-bottom: 9px;
+	
+	@media (min-width: 768px) {
+		display: inline-block;
+		margin-right: 0px;
+	}
+
+	@media (min-width: 1200px) {
+		margin-right: 15px;
+		
+		&:last-child {
+		margin-right: 0;
+		}		
+	}
+}
+
+.filter-block__button {
+	display: inline-block;
+	color: #000;
+	cursor: pointer;
+	padding: 10px 29px 13px;
+	border: 2px solid @babypowder;
+	
+	
+	-webkit-transition: 0.2s ease-in;
+	   -moz-transition: 0.2s ease-in;
+	    -ms-transition: 0.2s ease-in;
+	     -o-transition: 0.2s ease-in;
+	        transition: 0.2s ease-in;
+	
+	&:hover, &:focus, &:active {
+		color: @orangelight;
+	}
+}
+
+// .filter-block__button--active {
+// 	padding: 10px 29px 13px;
+// 	border: 2px solid #fff;
+// 	color: #000;
+// }
+
+.filter-block__button.filter.active {
+	padding: 10px 29px 13px;
+	border: 2px solid @orangedark;
+	color: @orangedark;
+}
+
+#portfolio-projects .mix {
+	display: none;
+}

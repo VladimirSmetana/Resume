@@ -1,0 +1,188 @@
+.contact-form {
+
+}
+
+.contact-form__input {
+	color: @orangelight;
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px 19px;
+	border: none;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	background-color: #FFF;
+	border: 3px solid #fff;
+ 	
+ 	-webkit-transition: border-color 0.3s ease-in;
+	   -moz-transition: border-color 0.3s ease-in;
+	    -ms-transition: border-color 0.3s ease-in;
+	     -o-transition: border-color 0.3s ease-in;
+	        transition: border-color 0.3s ease-in;
+  	
+  	&:hover, &:active, &:hover {
+  		border: 3px solid @orangedark;
+  	}
+
+  	&:focus {
+		outline: none;
+	}
+}
+
+.contact-form__input--half-width {
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+	
+	&:last-of-type {
+		margin-right: 0;
+	}
+}
+
+.contact-form__textarea {
+	color: @orangedark;
+	font-size: 16px;
+	font-weight: 700;
+	width: 100%;
+	height: 128px;
+	margin-bottom: 10px;
+	padding: 10px 19px;
+	
+	border: none;
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+	background-color: #FFF;
+	border: 3px solid #fff;
+	
+	-webkit-transition: border-color 0.3s ease-in;
+	   -moz-transition: border-color 0.3s ease-in;
+	    -ms-transition: border-color 0.3s ease-in;
+	     -o-transition: border-color 0.3s ease-in;
+	        transition: border-color 0.3s ease-in;
+	transition:all 0.3s ease-in-out;
+		
+	&:hover, &:active, &:hover {
+  		border: 3px solid @orangedark;
+  	}
+
+  	&:focus {
+		outline: none;
+	}	
+}
+
+@media (min-width : 1200px) {
+	.contact-form__bg-pencil {
+		position: relative;
+	}
+
+	.contact-form__bg-pencil:after {
+		position: absolute;
+		left: 68%;
+		top: 77%;
+		display: block;
+		width: 203px;
+		height: 153px;
+		content: "";
+		background-image: url("../img/bg/pencil.png");
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+}
+
+.contact-form__submit {
+	width: 100%;
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	
+	padding: 8px 47px 12px;
+	text-align: center;
+	
+	color: #FFF;
+	border: 4px solid #fff;
+	-webkit-border-radius: 80px;
+	        border-radius: 80px;
+	background-color: transparent;
+	
+	-webkit-transition: 0.3s ease-in;
+	   -moz-transition: 0.3s ease-in;
+	    -ms-transition: 0.3s ease-in;
+	     -o-transition: 0.3s ease-in;
+	        transition: 0.3s ease-in;
+	
+	&:hover {
+		background-color: #FFF;
+		color: @orangedark;
+	}		
+
+	&:active {
+		background-color: transparent;
+		color: @orangedark;
+		border: 4px solid @orangedark;
+	}
+
+	&:focus {
+  		outline: none;				
+  	}
+
+  	@media (min-width: 768px) {
+		font-size: 20px;
+		width: auto;
+  	}
+
+  	@media (min-width: 1200px) {
+		font-size: 22px;  		
+  	}
+	
+}
+
+label.error {
+	background-color: #c62828;
+	position: relative;
+	display: block;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 5px 15px 8px;
+	margin-bottom: 10px;
+	margin-top: 2px;
+	
+	@cornerSize: 12px;
+	
+
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 100%;
+		left: 40px;
+		
+		margin-left: -@cornerSize;
+		width: 0;
+		height: 0;
+		border-bottom: @cornerSize solid #c62828;
+		border-right: @cornerSize solid transparent;
+		border-left: @cornerSize solid transparent;
+		
+	}
+}
+
+label#phone-error.error {
+	clear: both;
+	width: 49%;
+	float: right;
+}
+
+.contact-form__success {
+	background-color: #FFF;
+	position: relative;
+	display: block;
+	border-radius: 8px;
+	color: #00897B;
+	padding: 5px 15px 8px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-top: 2px;
+	font-size: 20px;
+}
